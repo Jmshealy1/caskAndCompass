@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cask & Compass - Daily Planner</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-branding">
+      <img src="../images/logo.png" alt="Cask & Compass Monogram Logo" class="logo" />
+      <h1 class="site-title">Cask & Compass</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro-section">
+      <h2>Daily Planner</h2>
+      <p>Create your plan for today and track your progress. View missed and completed goals for each day this week.</p>
+    </section>
+
+    <section id="today-plan" class="card">
+      <h2>Today's Goals</h2>
+      <input type="date" id="calendarInput" />
+      <form id="dailyPlanForm">
+        <input type="text" placeholder="Add a goal..." required />
+        <button type="submit">Add Goal</button>
+      </form>
+      <ul id="todayGoals" class="checklist"></ul>
+      <button id="completeDayBtn">Complete Day</button>
+    </section>
+
+    <section id="today-completed" class="card">
+      <h2>Completed Goals</h2>
+      <ul id="completedGoals" class="checklist done"></ul>
+    </section>
+
+    <section id="week" class="card">
+      <h2>This Week</h2>
+      <div id="weeklyLog"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cask & Compass. All rights reserved.</p>
+  </footer>
+</body>
+</html>
